@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 150vh;
+}
+
+.arrow {
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    transform: .2s linear;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 300px;
+    bottom: -300px;
+    background-color: #000;
+    transform: .2s linear;
+}
+
+.arrow.on {
+    bottom: 310px;
+    transform: rotate(180deg);
+}
+
+nav.on {
+    bottom: 0;
+}
